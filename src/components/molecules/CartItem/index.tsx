@@ -1,15 +1,21 @@
 import { Picture } from "components/atoms/Picture";
 import { ReactElement } from "react";
 import { Wrapper, Title, Content, SubValue, Value } from "./styles";
+import { Props } from "./types";
 
-export function CartItem(): ReactElement {
+export function CartItem({
+  name,
+  imageUrl,
+  sellingPriceLabel,
+  priceLabel,
+}: Props): ReactElement {
   return (
     <Wrapper>
-      <Picture />
+      <Picture src={imageUrl} />
       <Content>
-        <Title>Trufa de morango</Title>
-        <SubValue>R$ 1,23</SubValue>
-        <Value>R$ 1,11</Value>
+        <Title>{name}</Title>
+        <SubValue>{priceLabel}</SubValue>
+        <Value>{sellingPriceLabel}</Value>
       </Content>
     </Wrapper>
   );

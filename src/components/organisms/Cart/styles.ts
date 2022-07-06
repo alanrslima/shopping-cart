@@ -19,21 +19,8 @@ export const WrapperItems = styled("div", {
 });
 
 export const Spacer = styled("div", {
-  mt: "$5",
+  m: "$3 $0",
 });
-
-export const WrapperTotal = styled("div", {
-  display: "flex",
-  flexDirection: "row",
-  fontWeight: "$black",
-  justifyContent: "space-between",
-  pb: "$6",
-  fontSize: "$4",
-});
-
-export const TotalLabel = styled("p", {});
-
-export const TotalValue = styled("p", {});
 
 export const Header = styled("header", {
   display: "flex",
