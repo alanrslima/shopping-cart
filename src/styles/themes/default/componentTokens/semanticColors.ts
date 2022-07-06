@@ -7,4 +7,11 @@ export const semanticColors = {
   formLabel: "$gray800",
   inputBorderColor: "$gray600",
   inputBgColor: "$white",
+
+  bgColor: "#D2D8E3",
+  button: "#4972EA",
+
+  signalGreen: "#D2FDAF",
+  signalRed: "#FF617B",
+  signalOrange: "#FFB861",
 };

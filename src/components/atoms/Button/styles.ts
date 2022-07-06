@@ -1,12 +1,19 @@
 import { styled } from "styles/stitches.config";
 
-export const WrapperButton = styled("button", {
-  backgroundColor: "gainsboro",
-  borderRadius: "9999px",
-  fontSize: "13px",
-  padding: "10px 15px",
+export const Wrapper = styled("button", {
+  borderRadius: "$2",
+  border: "none",
+  color: "$white",
+  bg: "$button",
+  fontSize: "$3",
+  fontWeight: "$bold",
+  w: "100%",
+  padding: "$5 $0",
   fontFamily: "$fonts$poppins",
-  "&:hover": {
-    backgroundColor: "lightgray",
+  cursor: "pointer",
+  transition: "$1",
+
+  _hover: {
+    opacity: 0.6,
   },
 });

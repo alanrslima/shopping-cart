@@ -67,8 +67,4 @@ export const colors = {
   gray700: "#6b7379",
   gray800: "#474c51",
   gray900: "#121314",
-
-  signalGreen: "#AEDF70",
-  signalRed: "#FF617B",
-  signalOrange: "#FFB861",
 };

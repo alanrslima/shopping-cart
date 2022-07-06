@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import { WrapperButton } from "./styles";
+import { Wrapper } from "./styles";
 
 export function Button(): ReactElement {
-  return <WrapperButton>Finalizar compra grátis</WrapperButton>;
+  return <Wrapper>Finalizar compra grátis</Wrapper>;
 }
