@@ -2,6 +2,7 @@ import { styled } from "styles/stitches.config";
 
 export const Wrapper = styled("div", {
   display: "flex",
+  flexDirection: "column",
   w: "100%",
   maxW: "500px",
 });
@@ -12,7 +13,6 @@ export const Content = styled("div", {
 
 export const WrapperItems = styled("div", {
   display: "flex",
-  flex: "max-content",
   padding: "$6",
   overflowY: "scroll",
   flexDirection: "column",

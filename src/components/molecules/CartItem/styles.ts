@@ -16,6 +16,8 @@ export const Content = styled("div", {
 
 export const Title = styled("p", {
   fontWeight: "$semiBold",
+  fontSize: "$1",
+  "@sm": { fontSize: "$3" },
   mb: "$3",
 });
 

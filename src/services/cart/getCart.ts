@@ -1,5 +1,5 @@
 import { centsToRealLabel } from "lib/currency";
-import cardData from "mocks/up.json";
+import { mocks } from "mocks";
 import { CartProps } from "types/cart";
 
 const processor = (data: CartProps): CartProps => {
@@ -20,11 +20,13 @@ const processor = (data: CartProps): CartProps => {
   };
 };
 
-export const getCartService = (): Promise<CartProps> => {
+export const getCartService = (id: number): Promise<CartProps> => {
   return new Promise((resolve, reject) => {
-    // Simulate API call delay
-    setTimeout(() => {
-      resolve(processor(cardData as any));
-    }, 1000);
+    const mock = mocks.find((item) => item.id === id);
+    if (mock?.data) {
+      resolve(processor(mock?.data as any));
+      return;
+    }
+    reject();
   });
 };

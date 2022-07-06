@@ -11,7 +11,8 @@ export const Wrapper = styled("div", {
 });
 
 export const Text = styled("span", {
-  fontSize: "$2",
+  fontSize: "$1",
+  "@sm": { fontSize: "$2" },
   color: "$blackA500",
   textAlign: "center",
 });
